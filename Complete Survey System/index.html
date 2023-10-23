@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="survey-container">
+        <img src="icon.png" alt="Icon" class="small-image">
+        <h1>College Campus Life Survey</h1>
+        <form id="survey-form">
+            <div class="question">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="question">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="question">
+                <label>1. What is your primary mode of transportation on campus?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q1" value=""> Walking </label>
+                    <label><input type="radio" name="q1" value=""> Bicycle </label>
+                    <label><input type="radio" name="q1" value=""> Public transportation </label>
+                    <label><input type="radio" name="q1" value=""> Car </label>
+                </div>
+            </div>
+            <div class="question">
+                <label>2. How satisfied are you with the dining options on campus?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q2" value=""> Very Satisfied </label>
+                    <label><input type="radio" name="q2" value=""> Satisfied </label>
+                    <label><input type="radio" name="q2" value=""> Neutral </label>
+                    <label><input type="radio" name="q2" value=""> Dissatisfied </label>
+                </div>
+            </div>
+            <div class="question">
+                <label>3. Which extracurricular activities do you participate in?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q3" value=""> Sports and athletics </label>
+                    <label><input type="radio" name="q3" value=""> Clubs and organizations</label>
+                    <label><input type="radio" name="q3" value=""> Arts and culture</label>
+                    <label><input type="radio" name="q3" value=""> None</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>4. How often do you use the campus library for studying and research?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q4" value=""> Daily </label>
+                    <label><input type="radio" name="q4" value=""> Weekly </label>
+                    <label><input type="radio" name="q4" value=""> Monthly</label>
+                    <label><input type="radio" name="q4" value=""> Rarely/Never</label> 
+                </div>
+            </div>
+            <div class="question">
+                <label>5. Are you satisfied with the availability of on-campus housing options?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q5" value=""> Very Satisfied</label>
+                    <label><input type="radio" name="q5" value=""> Satisfied</label>
+                    <label><input type="radio" name="q5" value=""> Neutral</label>
+                    <label><input type="radio" name="q5" value=""> Dissatisfied</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>6. How do you rate the accessibility of mental health resources on campus?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q6" value=""> Excellent </label>
+                    <label><input type="radio" name="q6" value=""> Good</label>
+                    <label><input type="radio" name="q6" value=""> Fair</label>
+                    <label><input type="radio" name="q6" value=""> Poor</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>7. What is your preferred study environment on campus?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q7" value=""> Library</label>
+                    <label><input type="radio" name="q7" value=""> Coffee Shop</label>
+                    <label><input type="radio" name="q7" value=""> Dorm room</label>
+                    <label><input type="radio" name="q7" value=""> Study Lounge</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>8. How often do you attend campus events and social gatherings?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q8" value=""> Frequently</label>
+                    <label><input type="radio" name="q8" value=""> Occasionally</label>
+                    <label><input type="radio" name="q8" value=""> Rarely</label>
+                    <label><input type="radio" name="q8" value=""> Never</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>9. Which of the following best describes your opinion on campus safety?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q9" value=""> Very safe</label>
+                    <label><input type="radio" name="q9" value=""> Somewhat safe</label>
+                    <label><input type="radio" name="q9" value=""> Neutral</label>
+                    <label><input type="radio" name="q9" value=""> Unsafe</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>10. How do you usually manage your academic workload and stress?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="q0" value=""> Time management and planning</label>
+                    <label><input type="radio" name="q0" value=""> Seeking help from professors</label>
+                    <label><input type="radio" name="q0" value=""> Using campus counseling services</label>
+                    <label><input type="radio" name="q0" value=""> Ignoring the stress and hoping for the best</label>
+                </div>
+            </div>
+            <button type="button" onclick="submitSurvey()">Submit</button>
+        </form>
+        <div class="trademark">Vedant Patil</div>
+    </div>
+    <div id="submission-modal" class="modal">
+        <div class="modal-content">
+            <p>Survey Submitted</p>
+            <button id="ok-button">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
