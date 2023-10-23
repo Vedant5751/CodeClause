@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer-stopwatch">
+            <div class="timer">
+                <h1>Timer</h1>
+                <div class="input-container">
+                    <input type="number" id="timer-hours" placeholder="HH">
+                    <input type="number" id="timer-minutes" placeholder="MM">
+                    <input type="number" id="timer-seconds" placeholder="SS">
+                </div>
+                <div class="button-container">
+                    <button id="start-timer" class="btn-start">Start</button>
+                    <button id="stop-timer" class="btn-stop">Stop</button>
+                    <button id="reset-timer" class="btn-reset">Reset</button>
+                </div>
+                <div id="timer-display">00:00:00</div>
+            </div>
+
+            <div class="stopwatch">
+                <h1>Stopwatch</h1>
+                <div class="button-container">
+                    <button id="start-stopwatch" class="btn-start">Start</button>
+                    <button id="stop-stopwatch" class="btn-stop">Stop</button>
+                    <button id="reset-stopwatch" class="btn-reset">Reset</button>
+                </div>
+                <div id="stopwatch-display">00:00:00</div>
+            </div>
+        </div>
+    </div>
+    <img class="top-right-image" src="icon.png" alt="Icon">
+    <p class="bottom-left-trademark">Vedant Patil</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
